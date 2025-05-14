@@ -45,6 +45,7 @@ input_data = pd.DataFrame({
 
 # Predictions
 price_pred = reg_model.predict(input_data)[0]
+price_pred = price_pred * 1_000_000
 category_pred = clf_model.predict(input_data)[0]
 
 # Results
