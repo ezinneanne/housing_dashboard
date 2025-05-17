@@ -42,7 +42,6 @@ input_data = pd.DataFrame({
     'state': [state]
 })
 
-
 # Predictions
 price_pred = reg_model.predict(input_data)[0]
 price_pred = price_pred * 1_000_000
@@ -52,3 +51,5 @@ category_pred = clf_model.predict(input_data)[0]
 st.subheader("🏷️ Prediction")
 st.write(f"Estimated Price: ₦{int(price_pred):,}")
 st.write(f"Price Category: {'Expensive' if category_pred == 1 else 'Affordable'}")
+
+# improving the model
