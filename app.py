@@ -10,7 +10,7 @@ clf_model = joblib.load('classification_model.pkl')
 
 # Page title
 st.title("🏠 Nigerian House Price Prediction Dashboard")
-st.markdown("Use this app to predict house price and affordability category based on selected features.")
+st.markdown("Use this app to predict house price and affordability category using trained ML models.")
 
 # Sidebar Inputs
 st.sidebar.header("Enter House Features")
